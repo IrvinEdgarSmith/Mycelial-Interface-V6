@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background-primary: #1E0E2F;
+  --color-background-secondary: #2A1542;
+  --color-background-tertiary: #36195B;
+  
+  --color-secondary-main: #00FFFF;
+  --color-secondary-light: #66FFFF;
+  --color-secondary-dark: #00CCCC;
+  
+  --color-tertiary-main: #FF00FF;
+  --color-tertiary-light: #FF66FF;
+  --color-tertiary-dark: #CC00CC;
+  
+  --color-accent-main: #00FF00;
+  --color-accent-light: #66FF66;
+  --color-accent-dark: #00CC00;
+  
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #E0E0E0;
+  --color-border: #483D56;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text-primary);
+  background-color: var(--color-background-primary);
+}
+
+/* Chat message styles */
+.prose p:first-child {
+  margin-top: 0;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+/* Utility classes */
+.bg-background-primary {
+  background-color: var(--color-background-primary);
+}
+
+.bg-background-secondary {
+  background-color: var(--color-background-secondary);
+}
+
+.bg-background-tertiary {
+  background-color: var(--color-background-tertiary);
+}
+
+.text-secondary-main {
+  color: var(--color-secondary-main);
+}
+
+.text-tertiary-main {
+  color: var(--color-tertiary-main);
+}
+
+.text-accent-main {
+  color: var(--color-accent-main);
+}
+
+.border-secondary-main {
+  border-color: var(--color-secondary-main);
+}
+
+.border-tertiary-main {
+  border-color: var(--color-tertiary-main);
+}
+
+.border-accent-main {
+  border-color: var(--color-accent-main);
+}
+
+.border-border {
+  border-color: var(--color-border);
+}
+
+.bg-secondary-main {
+  background-color: var(--color-secondary-main);
+}
+
+.bg-tertiary-main {
+  background-color: var(--color-tertiary-main);
+}
+
+.bg-accent-main {
+  background-color: var(--color-accent-main);
+}
+
+.hover\:bg-accent-dark:hover {
+  background-color: var(--color-accent-dark);
+}
+
+.bg-tertiary-700 {
+  background-color: var(--color-tertiary-dark);
+}
